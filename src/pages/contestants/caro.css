@@ -1,0 +1,23 @@
+.presentation-mode {
+	OUTLINE: NONE;	
+}
+		.presentation-mode .complex {
+			text-align: left;
+			flex-direction: column;
+			justify-content: flex-start;}
+
+		
+
+
+.my-slide {
+    display: flex;
+    align-items: center;
+      justify-content: center;
+      text-align: center;
+    height: 100vh;
+    padding: 75px;
+    line-height: 1.5;
+    font-size: 1.5em;
+        color: white;}
+
+   
