@@ -33,7 +33,7 @@ const Header = () => {
           <Ltxt to='/' name='Home' />
 
           <Ltxt to='/how-to-play' name='How to play' />
-          <Linkk to='/'><LgText  style={{ color: "#FF4000", fontWeight: "900" }}>
+          <Linkk to='/'><LgText  style={{ color: "#FF4000", fontWeight: "900", fontSize: '2rem' }}>
             DCI
           </LgText></Linkk>
           <Ltxt to='/contestants' name='Contestants' />

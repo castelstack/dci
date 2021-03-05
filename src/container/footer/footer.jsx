@@ -5,19 +5,19 @@ import insta from "../../images/inst.svg";
 import styled from "styled-components";
 import { SmText } from "../../constants/style";
 import { Typography } from "@material-ui/core";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 const Container = styled.div`
-  background: #343a40;
+  background: #102542;
   display: grid;
   grid-template-columns: 1fr repeat(2, max-content);
   align-items: center;
-  padding:.5rem 1rem;
-  grid-gap: 1rem;
+  padding:.2rem 1rem;
+  grid-gap: .1rem;
 
   @media only screen and (max-width: 602px) {
-    grid-template-columns: 1fr ;
-   justify-items: center;
+    grid-template-columns: repeat(2, max-content);
+   justify-content: space-between;
   }
 `;
 const Legal = styled.div`
@@ -27,20 +27,28 @@ const Legal = styled.div`
   justify-self: center;
   @media only screen and (max-width: 602px) {
     
-   grid-row:2/3;
+  
   }
 `;
 const Contact = styled.div`
 display: grid;
-grid-template-rows: repeat(3, min-content);
+grid-template-rows: repeat(2, min-content);
 @media only screen and (max-width: 602px) {
   grid-template-columns: 1fr ;
- justify-items: center;
- grid-row:1/2;
+
+
+}
+`;
+const Cpy = styled.div`
+@media only screen and (max-width: 602px) {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+ grid-row:2/3;
 }
 `;
 const SocialIcon = styled.img`
-  height: 35px;
+  height: 30px;
 `;
 const SocialLink = styled.a``;
 const Footer = () => {
@@ -48,13 +56,16 @@ const Footer = () => {
       <Container>
        
 
-      <SmText white> © 2021 DCI all rights reserved</SmText>
+      <Cpy>
+
+      <SmText white style={{color: 'gray'}}> © 2021 DCI all rights reserved</SmText>
+      </Cpy>
       <Contact>
-        <Link to='/user-page' >
+        {/* <Link to='/user-page' >
           user test
-        </Link>
-        <Typography variant='subtitle2' style={{color: 'white'}}>hhhh@gmail.com</Typography>
-        <Typography variant='subtitle2' style={{color: 'white'}}>0909****</Typography>
+        </Link> */}
+        <Typography variant='subtitle2' style={{color: 'gray'}}>hhhh@gmail.com</Typography>
+        <Typography variant='subtitle2' style={{color: 'gray'}}>0909****</Typography>
       </Contact>
          
       <Legal>

@@ -32,6 +32,8 @@ const ConInfo = styled.div`
   padding: 0.8rem 1rem;
   align-items: center;
   background: #8ac6d0;
+  background-position: center;
+  background-size: contain;
 `;
 const Div = styled.div`
 display: grid;
@@ -51,7 +53,7 @@ display: grid;
 
 const ConSlide = () => {
   return (
-    <Container style={{ backgroundImage: `url(${Img})` }}>
+    <Container style={{ backgroundImage: `url(${Img})`, backgroundSize: "contain" }}>
       <Content>
         <ConInfo>
           <MdText>Josh Wence</MdText>
